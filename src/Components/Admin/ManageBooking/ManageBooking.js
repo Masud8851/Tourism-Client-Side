@@ -7,25 +7,31 @@ import Header from "../../Header/Header";
 const ManageBooking = () => {
 	const [allBookings, setAllBookings] = useState([]);
 	useEffect(() => {
-		axios.get(`http://localhost:5000/allBookings`).then((res) => {
-			setAllBookings(res.data);
-		});
+		axios
+			.get(`https://tourism-by-world.herokuapp.com/allBookings`)
+			.then((res) => {
+				setAllBookings(res.data);
+			});
 	}, []);
 
 	// Approve
 	const handleApprove = (id) => {
-		axios.put(`http://localhost:5000/bookingUpdate/${id}`, {}).then((res) => {
-			console.log(res);
-		});
+		axios
+			.put(`https://tourism-by-world.herokuapp.com/bookingUpdate/${id}`, {})
+			.then((res) => {
+				console.log(res);
+			});
 	};
 
 	// Delete
 	const handleDelete = (id) => {
-		axios.delete(`http://localhost:5000/myBooking/${id}`).then((res) => {
-			console.log(res);
-			const remain = allBookings.filter((book) => book._id !== id);
-			setAllBookings(remain);
-		});
+		axios
+			.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
+			.then((res) => {
+				console.log(res);
+				const remain = allBookings.filter((book) => book._id !== id);
+				setAllBookings(remain);
+			});
 	};
 	return (
 		<div>

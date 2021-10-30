@@ -13,7 +13,7 @@ const Service = () => {
 	const [item, setItem] = useState({});
 	useEffect(() => {
 		axios
-			.get(`http://localhost:5000/package/${id}`)
+			.get(`https://tourism-by-world.herokuapp.com/package/${id}`)
 			.then((res) => setItem(res.data));
 	}, []);
 
@@ -28,10 +28,12 @@ const Service = () => {
 		console.log(data);
 		data.status = "Pending";
 		data.img = item.img;
-		axios.post(`http://localhost:5000/addorder`, data).then((res) => {
-			console.log(res);
-			reset();
-		});
+		axios
+			.post(`https://tourism-by-world.herokuapp.com/addorder`, data)
+			.then((res) => {
+				console.log(res);
+				reset();
+			});
 	};
 
 	return (

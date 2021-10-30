@@ -6,9 +6,9 @@ const Footer = () => {
 		<div>
 			<div className="footer text-lg-start text-sm-center mt-5">
 				<div className="container">
-					<div className="row">
-						<div className="col-md-3">
-							<h1>Practice</h1>
+					<div className="row g-5">
+						<div className="col-md-4">
+							<h1>Tourism</h1>
 							<ul>
 								<li>About</li>
 								<li>For Patients</li>
@@ -17,41 +17,40 @@ const Footer = () => {
 								<li>Blog</li>
 							</ul>
 						</div>
-						<div className="col-md-3">
-							<h1>Resources</h1>
+						<div className="col-md-4">
+							<h1>Payment Method</h1>
+							<p>
+								You can choose many payment options. Tourist satisfiction is our
+								goal. So you can pay by -
+							</p>
 							<ul>
-								<li>New Patients</li>
-								<li>Meet the Team</li>
-								<li>Patient Form</li>
-								<li>Insurance</li>
-								<li>Account Login</li>
+								<li>* Visa Card</li>
+								<li>* Master Card</li>
+								<li>* bKash</li>
 							</ul>
 						</div>
-						<div className="col-md-3">
+						<div className="col-md-4">
 							<h1>Services</h1>
+							<p>
+								We offer so many tour packages. So many packages are available
+								by us.
+							</p>
 							<ul>
-								<li>Dental Dictionary</li>
-								<li>Dental Sealands</li>
-								<li>Dental Implants</li>
-								<li>General Dentistry</li>
-								<li>Sedation Dentistry</li>
-							</ul>
-						</div>
-						<div className="col-md-3">
-							<h1>Our Address</h1>
-							<ul>
-								<li>Datobbo Dentistry 5212 </li>
-								<li>Village Dr Mason, NY.</li>
-								<li>Phone:+1 3500 5867 340</li>
-								<li>Email:yourdomain@gmail.com</li>
-								<li>Fax:+1 675 5867 340</li>
+								<li>* Vacation Tour Packages</li>
+								<li>* City Tour Packages</li>
+								<li>* Summer Tour Packages</li>
+								<li>* Winter Tour Packages</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				<hr />
 				<footer className="under-footer">
 					<div>
-						<p>©️ All Copyrigths reserver by ThemeForest</p>
+						<p className="pb-3">
+							Copyright 2021 <span>TourX</span> | Design By{" "}
+							<span>Masudur Rahman</span>
+						</p>
 					</div>
 				</footer>
 			</div>

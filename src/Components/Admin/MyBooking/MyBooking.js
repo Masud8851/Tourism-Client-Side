@@ -9,17 +9,21 @@ const MyBooking = () => {
 	const { user } = useAuth();
 	const [myBookings, setmyBookings] = useState([]);
 	useEffect(() => {
-		axios.get(`http://localhost:5000/myBooking/${user?.email}`).then((res) => {
-			setmyBookings(res.data);
-		});
+		axios
+			.get(`https://tourism-by-world.herokuapp.com/myBooking/${user?.email}`)
+			.then((res) => {
+				setmyBookings(res.data);
+			});
 	}, []);
 
 	const handleDelete = (id) => {
-		axios.delete(`http://localhost:5000/myBooking/${id}`).then((res) => {
-			console.log(res);
-			const remain = myBookings.filter((book) => book._id !== id);
-			setmyBookings(remain);
-		});
+		axios
+			.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
+			.then((res) => {
+				console.log(res);
+				const remain = myBookings.filter((book) => book._id !== id);
+				setmyBookings(remain);
+			});
 	};
 	console.log(myBookings);
 	return (

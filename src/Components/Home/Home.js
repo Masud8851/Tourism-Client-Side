@@ -11,7 +11,7 @@ const Home = () => {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:5000/allpackages")
+			.get("https://tourism-by-world.herokuapp.com/allpackages")
 			.then((res) => setPackages(res.data));
 	}, []);
 

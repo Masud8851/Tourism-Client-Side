@@ -10,13 +10,17 @@ const AddNewPackage = () => {
 		register,
 		handleSubmit,
 		formState: { errors },
+		reset,
 	} = useForm();
 
 	const onSubmit = (data) => {
 		console.log(data);
-		axios.post(`http://localhost:5000/addpackage`, data).then((res) => {
-			console.log(res);
-		});
+		axios
+			.post(`https://tourism-by-world.herokuapp.com/addpackage`, data)
+			.then((res) => {
+				console.log(res);
+				reset();
+			});
 	};
 
 	return (
