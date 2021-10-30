@@ -20,6 +20,8 @@ const ManageBooking = () => {
 			.put(`https://tourism-by-world.herokuapp.com/bookingUpdate/${id}`, {})
 			.then((res) => {
 				console.log(res);
+				const remain = allBookings.filter((book) => book._id !== id);
+				setAllBookings(remain);
 			});
 	};
 

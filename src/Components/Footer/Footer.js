@@ -9,12 +9,15 @@ const Footer = () => {
 					<div className="row g-5">
 						<div className="col-md-4">
 							<h1>Tourism</h1>
+							<p>
+								Tourist satisfiction is our goal. Make sure your booking and
+								enjoy with us.
+							</p>
 							<ul>
-								<li>About</li>
-								<li>For Patients</li>
-								<li>FAQs</li>
-								<li>Contact Us</li>
-								<li>Blog</li>
+								<li>* About</li>
+								<li>* FAQs</li>
+								<li>* Contact Us</li>
+								<li>* Blog</li>
 							</ul>
 						</div>
 						<div className="col-md-4">

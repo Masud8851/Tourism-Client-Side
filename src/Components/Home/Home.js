@@ -22,60 +22,26 @@ const Home = () => {
 			<div className="banner d-flex justify-content-center align-items-center flex-column">
 				<h1 className="text-warning"> Find Your Next Tour</h1>
 				<div>
-					<form class="d-flex">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button class="btn btn-warning" type="submit">
-							Search
-						</button>
-					</form>
+					<Link to="/services" className="btn btn-outline-warning">
+						Book Now
+					</Link>
 				</div>
 			</div>
 
-			{/* Book your tour packages */}
-			{/* <div className="container mt-0">
-				<div className="event-time p-5">
-					<form className="d-md-flex flex-row d-sm-block">
-						<input
-							class="form-control me-2 w-25"
-							type="text"
-							placeholder="Where to..."
-							aria-label="Search"
-						/>
-
-						<input class="form-control me-2 w-25" type="date" />
-
-						<select className="w-25" id="type" name="Travel type">
-							<option value="volvo">City Tours</option>
-							<option value="saab">Vacation Tours</option>
-							<option value="fiat">Couple Tours</option>
-							<option value="audi">Adventure Tours</option>
-							<option value="audi">Group Tours</option>
-						</select>
-
-						<Link className="btn btn-warning ms-2 w-25" type="submit">
-							Find Now <i class="fas fa-search"></i>
-						</Link>
-					</form>
-				</div>
-			</div> */}
-
 			{/* Packages */}
-
+			<h1>
+				<span> Choose Your Best Package </span>
+			</h1>
 			<Container>
 				<div className="d-flex flex-row justify-content-between align-items-center mt-5">
 					<div>
-						<h1 className="text-success ">Next Packages</h1>
+						<h1 className="text-success ">Our Next Packages</h1>
 					</div>
 					<div>
 						<Link to="/services">
 							{" "}
 							<span id="see-all">
-								See all <i class="fas fa-arrow-right"></i>
+								See all <i className="fas fa-arrow-right"></i>
 							</span>{" "}
 						</Link>
 					</div>
@@ -101,60 +67,109 @@ const Home = () => {
 			</Container>
 
 			{/* Behind the reason */}
-			<div className="reason">
-				{/* <div className="container mt-5">
-				<h1 className="mb-5 text-success">[ Hospitality ]</h1>
-				<div className="row row-cols-1 row-cols-md-3 g-4">
-					<div className="col">
-						<div className="card h-100 hospitality">
+			<div className="container mt-5 ">
+				<h1 className="mb-4">
+					<span>Why You Are Travel With Tourx</span>
+				</h1>
+				<div className="row g-5">
+					<div className="col-md-3">
+						<img
+							src="https://i.ibb.co/fxtRS4Y/Capture.jpg"
+							className="card-img-top"
+							alt="..."
+							height="200px"
+						/>
+					</div>
+					<div className="col-md-3">
+						<img
+							src="https://i.ibb.co/r3Gk8sS/4.jpg"
+							className="card-img-top"
+							alt="..."
+							height="200px"
+						/>
+					</div>
+					<div className="col-md-3">
+						<div className="card bg-success">
 							<img
-								src={appointment}
-								className="card-img-top rounded mt-3  mx-auto p-2 w-25 m-2"
+								src="https://i.ibb.co/pQ74QVm/2.jpg"
+								className="card-img-top"
 								alt="..."
+								height="200px"
 							/>
-							<div className="card-body">
-								<h5 className="card-title m-1">Easy Appointment</h5>
-								<p className="card-text m-3">
-									Easy Appointment Lorem ipsum dolor sit amet. Lorem ipsum dolor
-									sit amet.
-								</p>
-							</div>
 						</div>
 					</div>
-					<div className="col">
-						<div className="card h-100 hospitality">
-							<img
-								src={emergency}
-								className="card-img-top  mx-auto p-2 w-25 m-2"
-								alt="..."
-							/>
-							<div className="card-body">
-								<h5 className="card-title m-1">Emergency Service</h5>
-								<p className="card-text m-3">
-									Emergency Service Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Sed, placeat.{" "}
-								</p>
+					<div className="col-md-3">
+						<img
+							src="https://i.ibb.co/r3Gk8sS/3.jpg"
+							className="card-img-top"
+							alt="..."
+							height="200px"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div className="container mt-5">
+				<h1>
+					<span id="traveller">What Our Traveller Say About Us</span>
+				</h1>
+			</div>
+			<div className="mt-5 ">
+				<div className="container mt-5">
+					<div className="row row-cols-1 row-cols-md-3 g-4">
+						<div className="col">
+							<div className="card people h-100">
+								<img
+									src="https://i.ibb.co/0srGhQn/reviewer-1-07859027.png"
+									className="card-img-top rounded mt-3  mx-auto p-2 w-25 m-2"
+									alt="..."
+								/>
+								<div className="card-body">
+									<h5 className="card-title m-1">Dina Jems</h5>
+									<h6>Traveller</h6>
+									<p className="card-text m-3">
+										Enjoy the trip!Have a blast and don't enjoy it too much!I
+										hope you have smooth skies!
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col">
-						<div className="card h-100 hospitality">
-							<img
-								src={t427}
-								className="card-img-top rounded-circle mx-auto p-2 w-25 m-3"
-								alt="..."
-							/>
-							<div className="card-body">
-								<h5 className="card-title m-1">24/7 Service</h5>
-								<p className="card-text m-3">
-									24/7 Service Lorem ipsum dolor, sit amet consectetur
-									adipisicing elit. Ut quis pariatur expedita?
-								</p>
+						<div className="col">
+							<div className="card people h-100">
+								<img
+									src="https://i.ibb.co/Msn90Pg/reviewer-2-52e03342.png"
+									className="card-img-top rounded-circle  mx-auto p-2 w-25 m-2"
+									alt="..."
+								/>
+								<div className="card-body">
+									<h5 className="card-title m-1">Jahid Hasan</h5>
+									<h6>Traveller</h6>
+									<p className="card-text m-3">
+										Enjoy the trip!Have a blast and don't enjoy it too much!I
+										hope you have smooth skies!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col">
+							<div className="card people h-100">
+								<img
+									src="https://i.ibb.co/cx7p5MC/reviewer-3-21d99f5c.png"
+									className="card-img-top rounded-circle mx-auto p-2 w-25 m-3"
+									alt="..."
+								/>
+								<div className="card-body">
+									<h5 className="card-title m-1">Shawan Paull</h5>
+									<h6>Traveller</h6>
+									<p className="card-text m-3">
+										Enjoy the trip!Have a blast and don't enjoy it too much!I
+										hope you have smooth skies!
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> */}
 			</div>
 			<Footer />
 		</div>

@@ -8,11 +8,12 @@
   background-image: url("https://i.ibb.co/HhtVpQR/photo-giphy1-3-gif.gif");
   /* Full height */
   height: 100%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  left: 0;
+  right: 0;
 }
 
 

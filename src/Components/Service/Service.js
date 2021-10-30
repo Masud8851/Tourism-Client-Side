@@ -36,13 +36,19 @@ const Service = () => {
 			});
 	};
 
+	// const handleOnClick = () => {
+	// 	Swal.fire("Good job!", "You clicked the button!", "success");
+	// };
+
 	return (
 		<div>
 			<Header />
 			<div>
 				<div className="banner d-flex justify-content-center align-items-center">
 					<h1>
-						<span className="contact">[ Tour Details ]</span>
+						<span className="contact">
+							Package Details & <br /> Booking
+						</span>
 					</h1>
 				</div>
 
@@ -86,6 +92,7 @@ const Service = () => {
 											placeholder="Title"
 											value={item.title}
 											className="p-2 m-2 w-100 rounded border-1 package-input"
+											required
 										/>
 									</div>
 
@@ -109,6 +116,7 @@ const Service = () => {
 								{errors.exampleRequired && <span>Required!</span>}
 
 								<input
+									// onClick={handleOnClick}
 									type="submit"
 									value="Book Now"
 									className="contact-submit-btn m-2 p-2 ps-4 pe-4 mt-3 ms-0"
