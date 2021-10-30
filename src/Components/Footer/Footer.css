@@ -1,0 +1,13 @@
+.footer{   
+    padding: 2%;
+   /* text-align: start; */
+    /* background-color: rgba(245, 248, 248, 0.931); */
+    background-color: #517832;
+    padding-bottom: 0;
+    color: azure;
+}
+.under-footer{
+    text-align: center;
+    border-top: 1px solid green;
+    align-items: center;
+}

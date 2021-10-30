@@ -1,0 +1,37 @@
+.banner{
+    /* background-image: url("https://source.unsplash.com/Wv6N5e75yXU/1920x1080"); */
+    background-image: url("https://i.ibb.co/26GCg59/banner.jpg/1920x1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 550px;
+}
+.event-time{
+    position: relative;
+    top: -10vh;
+    background-color: #335147;
+    border-radius: 15px;
+}
+
+.reason{
+    background-image: url("https://i.ibb.co/WvsLTY9/74204991.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.login{
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(10, 241, 241);
+}
+
+a:any-link{
+    text-decoration: none;
+}
+
+#see-all{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    
+}

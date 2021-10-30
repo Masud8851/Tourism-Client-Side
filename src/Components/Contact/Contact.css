@@ -1,0 +1,70 @@
+.contact{
+    font-size: 70px;
+    color: #FFCA2C;
+}
+.time{
+    font-size: 55px;
+}
+.single-contact-info {
+    min-height: 171px;
+    background: #fff;
+    box-shadow: 1px 2px 2px cyan;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 35px;
+    transition: width 2s, height 4s;
+}
+.single-contact-info:hover{
+    padding-bottom: 10px;
+    background-color: aqua;
+    border-radius: 15px;
+    color: rgb(49, 22, 27);
+}
+
+.single-contact-info .c-icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #ffe7ea;
+    display: block;
+    border-radius: 50%;
+    color: #fc5185;
+    color: var(--main-color);
+    font-size: 26px;
+    transition: .5s;
+    margin-right: 20px;
+}
+.single-contact-info.icon2 .c-icon {
+    color: aqua;
+    background: #dcf9ee;
+}
+
+/* Get In Touch */
+
+.contact-submit-btn {
+    text-decoration: none;
+    /* background-color: rgb(181, 242, 246); */
+    background-color: #517832;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 4px 4px 2px 1px #74ee10;
+}
+.contact-submit-btn:hover{
+    background-color: #74ee10;
+    box-shadow: 4px 4px 2px 1px #517832;
+    color: rgb(7, 20, 22);
+}
+.touch-input input,textarea{
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
+}
+textarea{
+    min-height: 175px;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
+}
