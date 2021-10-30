@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import useAuth from "../../Hooks/useAuth";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import "./Service.css";
 
 const Service = () => {
 	const { user } = useAuth();
@@ -36,14 +37,10 @@ const Service = () => {
 			});
 	};
 
-	// const handleOnClick = () => {
-	// 	Swal.fire("Good job!", "You clicked the button!", "success");
-	// };
-
 	return (
 		<div>
 			<Header />
-			<div>
+			<div className="manageBooking">
 				<div className="banner d-flex justify-content-center align-items-center">
 					<h1>
 						<span className="contact">
@@ -65,7 +62,9 @@ const Service = () => {
 								</Card.Body>
 							</Card>
 						</div>
+
 						<div className="col-md-6">
+							<h3 className="text-success">Confirm Your Booking</h3>
 							<form onSubmit={handleSubmit(onSubmit)}>
 								<div className="row ">
 									<div className="col-md-6 ">

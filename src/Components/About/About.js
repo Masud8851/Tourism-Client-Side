@@ -7,14 +7,18 @@ const About = () => {
 		<div>
 			<Header />
 			<div className="banner d-flex justify-content-center align-items-center">
-				<h1>
+				<h5>
 					<span className="contact">[ About us ]</span>
-				</h1>
+				</h5>
 			</div>
 			<div className="container">
 				<div className="row text-start align-items-center g-5 mb-5">
 					<div className="col-md-6 p-4">
-						<img src="https://i.ibb.co/vcS7bXM/about-1-bcfbc984.png" alt="" />
+						<img
+							src="https://i.ibb.co/vcS7bXM/about-1-bcfbc984.png"
+							alt=""
+							className="w-100"
+						/>
 					</div>
 					<div className="col-md-6 p-4">
 						<h3>
@@ -50,7 +54,7 @@ const About = () => {
 					<div className="col-md-6 p-4">
 						<iframe
 							className="b"
-							width="560"
+							width="100%"
 							height="315"
 							src="https://www.youtube.com/embed/linlz7-Pnvw"
 							title="YouTube video player"
@@ -67,8 +71,8 @@ const About = () => {
 				</h4>
 				<h4 className="text-start">All Guide Are 5 Year Expart In Travel</h4>
 				<div className="row">
-					<div class="row row-cols-1 row-cols-md-3 g-4">
-						<div class="col">
+					<div class="row row-cols-1 row-cols-md-3 gx-4">
+						<div class="col p-2">
 							<div class="card h-100">
 								<img
 									src="https://i.ibb.co/QHjBxPr/guide-1-a5da4cec.png"
@@ -81,7 +85,7 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col p-2">
 							<div class="card h-100">
 								<img
 									src="https://i.ibb.co/RPP2bNy/guide-3-fe55b700.png"
@@ -94,7 +98,7 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col p-2">
 							<div class="card h-100">
 								<img
 									src="https://i.ibb.co/0YCbR1Q/guide-4-db1ff982.png"

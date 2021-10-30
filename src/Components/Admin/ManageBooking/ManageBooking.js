@@ -1,11 +1,14 @@
+import Button from "@restart/ui/esm/Button";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card, CardGroup, Modal } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 
 const ManageBooking = () => {
 	const [allBookings, setAllBookings] = useState([]);
+	const [show, setShow] = useState(false);
+
 	useEffect(() => {
 		axios
 			.get(`https://tourism-by-world.herokuapp.com/allBookings`)
