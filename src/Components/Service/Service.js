@@ -7,11 +7,13 @@ import useAuth from "../../Hooks/useAuth";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Service.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Service = () => {
 	const { user } = useAuth();
 	const { id } = useParams();
 	const [item, setItem] = useState({});
+
 	useEffect(() => {
 		axios
 			.get(`https://tourism-by-world.herokuapp.com/package/${id}`)
@@ -26,6 +28,7 @@ const Service = () => {
 	} = useForm();
 
 	const onSubmit = (data) => {
+		alert("Are you sure to book your package?");
 		console.log(data);
 		data.status = "Pending";
 		data.img = item.img;

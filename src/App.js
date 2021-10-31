@@ -20,7 +20,6 @@ function App() {
 		<div className="App">
 			<AuthProvider>
 				<Router>
-					{/* <Header /> */}
 					<Switch>
 						<Route exact path="/">
 							<Home></Home>
@@ -56,7 +55,6 @@ function App() {
 							<NotFound />
 						</Route>
 					</Switch>
-					{/* <Footer /> */}
 				</Router>
 			</AuthProvider>
 		</div>
