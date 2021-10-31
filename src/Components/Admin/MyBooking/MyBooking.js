@@ -20,13 +20,16 @@ const MyBooking = () => {
 	}, []);
 
 	const handleDelete = (id) => {
-		axios
-			.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
-			.then((res) => {
-				console.log(res);
-				const remain = myBookings.filter((book) => book._id !== id);
-				setmyBookings(remain);
-			});
+		const proceed = window.confirm("Are you sure, you want to delete?");
+		if (proceed) {
+			axios
+				.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
+				.then((res) => {
+					console.log(res);
+					const remain = myBookings.filter((book) => book._id !== id);
+					setmyBookings(remain);
+				});
+		}
 	};
 	console.log(myBookings);
 	return (

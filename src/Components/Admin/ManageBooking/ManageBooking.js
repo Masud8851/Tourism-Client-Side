@@ -17,24 +17,30 @@ const ManageBooking = () => {
 
 	// Approve
 	const handleApprove = (id) => {
-		axios
-			.put(`https://tourism-by-world.herokuapp.com/bookingUpdate/${id}`, {})
-			.then((res) => {
-				console.log(res);
-				const remain = allBookings.filter((book) => book._id !== id);
-				setAllBookings(remain);
-			});
+		const proceed = window.confirm("Do you want to approve booking?");
+		if (proceed) {
+			axios
+				.put(`https://tourism-by-world.herokuapp.com/bookingUpdate/${id}`, {})
+				.then((res) => {
+					console.log(res);
+					const remain = allBookings.filter((book) => book._id !== id);
+					setAllBookings(remain);
+				});
+		}
 	};
 
 	// Delete
 	const handleDelete = (id) => {
-		axios
-			.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
-			.then((res) => {
-				console.log(res);
-				const remain = allBookings.filter((book) => book._id !== id);
-				setAllBookings(remain);
-			});
+		const proceed = window.confirm("Are you sure, you want to delete?");
+		if (proceed) {
+			axios
+				.delete(`https://tourism-by-world.herokuapp.com/myBooking/${id}`)
+				.then((res) => {
+					console.log(res);
+					const remain = allBookings.filter((book) => book._id !== id);
+					setAllBookings(remain);
+				});
+		}
 	};
 	return (
 		<div>

@@ -29,15 +29,27 @@
     margin-top: 41vmin;
     margin-left: 25px;
 }
-@media screen and (max-width:283px) {
+@media screen and (max-width:375px) {
     .title{
-        margin-top: 90vmin;
+        margin-top: 75vmin;
         font-size: 2rem;
     }
 }
-@media screen and (min-width:501px ) and (max-width:700px) {
+@media screen and (min-width:376px ) and (max-width:414px) {
     .title{
-        margin-top: 90vmin;
+        margin-top: 75vmin;
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:501px ) and (max-width:768px) {
+    .title{
+        margin-top: 60vmin;
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:769px ) and (max-width:1024px) {
+    .title{
+        margin-top: 60vmin;
         font-size: 2rem;
     }
 }
