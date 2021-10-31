@@ -29,11 +29,12 @@ const Home = () => {
 			</div>
 
 			{/* Packages */}
-			<h1>
-				<span> Choose Your Best Package </span>
-			</h1>
-			<Container>
-				<div className="d-flex flex-row justify-content-between align-items-center mt-5">
+
+			<Container className="mt-5">
+				<h1>
+					<span> Choose Your Best Package </span>
+				</h1>
+				<div className="d-flex flex-row justify-content-between align-items-center mt-3">
 					<div>
 						<h1 className="text-success ">Our Next Packages</h1>
 					</div>
@@ -72,7 +73,7 @@ const Home = () => {
 					<span>Why You Are Travel With Tourx</span>
 				</h1>
 				<div className="row g-5">
-					<div className="col-md-3">
+					<div className="col-md-3 p-2">
 						<img
 							src="https://i.ibb.co/fxtRS4Y/Capture.jpg"
 							className="card-img-top"
@@ -80,7 +81,7 @@ const Home = () => {
 							height="200px"
 						/>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 p-2">
 						<img
 							src="https://i.ibb.co/r3Gk8sS/4.jpg"
 							className="card-img-top"
@@ -88,7 +89,7 @@ const Home = () => {
 							height="200px"
 						/>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 p-2">
 						<div className="card bg-success">
 							<img
 								src="https://i.ibb.co/pQ74QVm/2.jpg"
@@ -98,7 +99,7 @@ const Home = () => {
 							/>
 						</div>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 p-2">
 						<img
 							src="https://i.ibb.co/r3Gk8sS/3.jpg"
 							className="card-img-top"
@@ -117,7 +118,7 @@ const Home = () => {
 			<div className="mt-5 ">
 				<div className="container mt-5">
 					<div className="row row-cols-1 row-cols-md-3 g-4">
-						<div className="col">
+						<div className="col p-3">
 							<div className="card people h-100">
 								<img
 									src="https://i.ibb.co/0srGhQn/reviewer-1-07859027.png"
@@ -134,7 +135,7 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col">
+						<div className="col p-3">
 							<div className="card people h-100">
 								<img
 									src="https://i.ibb.co/Msn90Pg/reviewer-2-52e03342.png"
@@ -151,7 +152,7 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col">
+						<div className="col p-3">
 							<div className="card people h-100">
 								<img
 									src="https://i.ibb.co/cx7p5MC/reviewer-3-21d99f5c.png"
