@@ -67,19 +67,17 @@ const Service = () => {
 							<h3 className="text-success">Confirm Your Booking</h3>
 							<form onSubmit={handleSubmit(onSubmit)}>
 								<div className="row ">
-									<div className="col-md-6 ">
+									<div className="col-md-6 p-2">
 										<input
 											{...register("name")}
-											placeholder="User Name"
 											value={user.displayName}
 											className="p-2 m-2 w-100 rounded border-1 package-input"
 										/>
 									</div>
 
-									<div className="col-md-6">
+									<div className="col-md-6 p-2">
 										<input
 											{...register("email")}
-											placeholder="User Email"
 											value={user.email}
 											className="p-2 m-2 w-100 rounded border-1 package-input"
 										/>
@@ -88,14 +86,13 @@ const Service = () => {
 									<div className="col-md-12">
 										<input
 											{...register("title")}
-											placeholder="Title"
 											value={item.title}
 											className="p-2 m-2 w-100 rounded border-1 package-input"
 											required
 										/>
 									</div>
 
-									<div className="col-md-6">
+									<div className="col-md-6 p-2">
 										<input
 											{...register("phone")}
 											placeholder="Phone number"
@@ -103,7 +100,7 @@ const Service = () => {
 										/>
 									</div>
 
-									<div className="col-md-6">
+									<div className="col-md-6 p-2">
 										<input
 											{...register("address")}
 											placeholder="Address"

@@ -28,9 +28,9 @@ function App() {
 						<Route path="/home">
 							<Home></Home>
 						</Route>
-						<Route path="/services">
+						<PrivateRoute path="/services">
 							<Services></Services>
-						</Route>
+						</PrivateRoute>
 						<PrivateRoute path="/service/:id">
 							<Service></Service>
 						</PrivateRoute>
