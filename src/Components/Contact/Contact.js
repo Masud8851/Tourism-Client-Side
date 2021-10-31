@@ -55,8 +55,8 @@ const Contact = () => {
 							<span>Contact Us</span>
 						</h3>
 						<div>
-							<form className="row g-3 align-items-center">
-								<div class="col-md-6 touch-input">
+							<form className="row  align-items-center">
+								<div class="col-md-6 touch-input p-2">
 									<input
 										type="text"
 										required
@@ -64,7 +64,7 @@ const Contact = () => {
 										className="border-0 p-3 w-100 mb-3"
 									/>
 								</div>
-								<div class="touch-input col-md-6">
+								<div class="touch-input col-md-6 p-2">
 									<input
 										type="email"
 										required
@@ -74,7 +74,7 @@ const Contact = () => {
 								</div>
 							</form>
 							<form className="row g-3 align-items-center">
-								<div class="touch-input col-md-6">
+								<div class="touch-input col-md-6 p-2">
 									<input
 										type="text"
 										required
@@ -82,7 +82,7 @@ const Contact = () => {
 										className="border-0 p-3 w-100 mb-3"
 									/>
 								</div>
-								<div class="touch-input col-md-6">
+								<div class="touch-input col-md-6 p-2">
 									<input
 										type="text"
 										required
@@ -91,8 +91,8 @@ const Contact = () => {
 									/>
 								</div>
 							</form>
-							<form className="row g-3 align-items-center">
-								<div class="touch-input col-md-12">
+							<form className="row  align-items-center">
+								<div class="touch-input col-md-12 p-2 pb-0">
 									<textarea
 										name="message"
 										required
@@ -103,7 +103,7 @@ const Contact = () => {
 							</form>
 							<Link
 								to="/"
-								className="contact-submit-btn m-2 p-3 mt-0 ms-0"
+								className="contact-submit-btn  p-2 ms-2"
 								type="submit"
 							>
 								<i class="fas fa-paper-plane"></i> Send
