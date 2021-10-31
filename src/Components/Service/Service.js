@@ -1,13 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card, Container, Row } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
 import useAuth from "../../Hooks/useAuth";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Service.css";
-import ClipLoader from "react-spinners/ClipLoader";
 
 const Service = () => {
 	const { user } = useAuth();
