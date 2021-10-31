@@ -46,9 +46,9 @@ const Home = () => {
 						</Link>
 					</div>
 				</div>
-				<Row xs={1} md={3} className="g-4 my-0 py-0">
+				<Row xs={1} md={3} className=" my-0 py-0">
 					{packages?.slice(0, 6).map((pk) => (
-						<Col>
+						<Col className="p-2">
 							<Card className="h-100">
 								<Card.Img variant="top" src={pk.img} height="200" />
 								<Card.Body className="h-50">
