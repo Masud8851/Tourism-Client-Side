@@ -49,13 +49,33 @@ const Service = () => {
 					</h1>
 				</div>
 
-				<Container className="text-center justify-content-center mt-5">
+				<Container className="text-center justify-content-center mt-5 mb-5">
 					<div className="row">
-						<div className="col-md-6">
+						<div className="col-md-6 mb-5">
 							<Card className="h-100">
 								<Card.Img variant="top" src={item?.img} height="200" />
 								<Card.Body>
-									<Card.Title>{item?.title}</Card.Title>
+									<Card.Title className="d-flex justify-content-between border-2 border-success pb-2 border-bottom">
+										<div>
+											<span>
+												<i class="fas fa-map-marker-alt"></i>
+											</span>{" "}
+											{item?.title}
+										</div>
+
+										<div>
+											<span>
+												<i class="fas fa-clock"></i>
+											</span>{" "}
+											{item?.duration}
+										</div>
+										<div>
+											<span>
+												<i class="fas fa-users"></i>
+											</span>{" "}
+											{item?.size}
+										</div>
+									</Card.Title>
 									<Card.Text className="text-justify text-start">
 										{item?.description}
 									</Card.Text>
@@ -83,7 +103,7 @@ const Service = () => {
 										/>
 									</div>
 
-									<div className="col-md-12">
+									<div className="col-md-12 p-2">
 										<input
 											{...register("title")}
 											value={item.title}

@@ -1,13 +1,11 @@
-import Button from "@restart/ui/esm/Button";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card, CardGroup, Modal } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 
 const ManageBooking = () => {
 	const [allBookings, setAllBookings] = useState([]);
-	const [show, setShow] = useState(false);
 
 	useEffect(() => {
 		axios
@@ -42,7 +40,9 @@ const ManageBooking = () => {
 		<div>
 			<Header />
 			<div>
-				<h2>Manage All Bookings {allBookings.length}</h2>
+				<h2>
+					Booking <span>Request </span> : {allBookings.length}
+				</h2>
 
 				<div className="row justify-content-center">
 					{allBookings.map((book) => (
@@ -52,14 +52,16 @@ const ManageBooking = () => {
 								src={book.img}
 								style={{ height: "200px" }}
 							/>
-							<Card.Body>
+							<Card.Body className="text-start">
 								<Card.Title>{book.title}</Card.Title>
-								<Card.Text>{book.email}</Card.Text>
+								<Card.Text>
+									{book.name} {book.email}
+								</Card.Text>
 							</Card.Body>
 
-							<Card.Body>
+							<Card.Body className="text-start">
 								<button
-									className="btn btn-success m-2"
+									className="btn btn-success m-2 mt-0"
 									onClick={() => {
 										handleApprove(book._id);
 									}}
@@ -68,7 +70,7 @@ const ManageBooking = () => {
 								</button>
 								<button
 									onClick={() => handleDelete(book._id)}
-									className="btn btn-danger m-2"
+									className="btn btn-danger m-2 mt-0"
 								>
 									Delete
 								</button>
