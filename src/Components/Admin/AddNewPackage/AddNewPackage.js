@@ -39,14 +39,14 @@ const AddNewPackage = () => {
 				</h2>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className="row ">
-						<div className="col-md-12 ">
+						<div className="col-md-12 p-2">
 							<input
 								{...register("title")}
 								placeholder="Pakage Title"
 								className="p-2 m-2 w-100 rounded border-1 package-input"
 							/>
 						</div>
-						<div className="col-md-4">
+						<div className="col-md-4 p-2">
 							<input
 								{...register("duration")}
 								placeholder="Duration"
@@ -54,7 +54,7 @@ const AddNewPackage = () => {
 							/>
 						</div>
 
-						<div className="col-md-4">
+						<div className="col-md-4 p-2">
 							<input
 								{...register("type")}
 								placeholder="Tour Type"
@@ -62,7 +62,7 @@ const AddNewPackage = () => {
 							/>
 						</div>
 
-						<div className="col-md-4">
+						<div className="col-md-4 p-2">
 							<input
 								{...register("size")}
 								placeholder="Max Group Size"
@@ -70,7 +70,7 @@ const AddNewPackage = () => {
 							/>
 						</div>
 
-						<div className="col-md-12">
+						<div className="col-md-12 p-2">
 							<input
 								{...register("img")}
 								placeholder="Image URL"
@@ -78,7 +78,7 @@ const AddNewPackage = () => {
 							/>
 						</div>
 
-						<div className="col-md-12">
+						<div className="col-md-12 p-2">
 							<textarea
 								{...register("description")}
 								placeholder="Descriptions"
